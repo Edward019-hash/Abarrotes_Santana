@@ -1,0 +1,257 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Cambiado a min-height */
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Añadido para que la imagen permanezca fija al hacer scroll */
+}
+
+/* Estilos del contenedor de los formularios */
+.contenedor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align : center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #800E13;
+    color: rgb(239, 230, 230);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #000000;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    width: 100%;
+    background-color: #800E13;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+nav ul li a {
+    color: rgb(220, 212, 212);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #f2f5f2;
+    border-radius: 4px;
+    color: black;
+}
+
+/* Estilos para el menú desplegable de "Idioma" */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #800E13;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.submenu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #660000;
+    color: #fff;
+}
+
+/* Mostrar el menú desplegable al pasar el cursor */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/* Otros estilos adicionales */
+.nosotros {
+    color: #000000;
+}
+
+.nosotros h1, .nosotros h2 {
+    color: #000000;
+}
+
+.contenedor2 {
+    background-color: #ffffff;
+    color: #0f0e0e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 850px;
+    text-align: left;
+}
+
+.contenedor2 h1, .contenedor2 h2 {
+    color: #000000;
+}
+
+.contenedor4 h1, h2, p, li {
+    text-align: left;
+}
+
+.contenedor5 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.mapa-fondo {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Centra el mapa horizontalmente */
+}
+
+iframe {
+    border-radius: 8px; /* Añade bordes redondeados al mapa */
+}
+
+.contenedor-registro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+/* Estilos para la sección de productos destacados */
+#productos-destacados {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 2000px;
+    max-width: 850px;
+    margin: 20px;
+  }
+  
+  .contenedor-productos {
+    display: flex;
+    flex-wrap:nowrap;
+    padding-left: 10px;
+    border: 8px;
+    width: 100%;
+    gap: 50px;
+   
+  }
+  
+  .tarjeta-producto {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+  }
+  
+  .tarjeta-producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 4px 0 0;
+  }
+  
+  .tarjeta-producto h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .tarjeta-producto p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .tarjeta-producto button {
+    padding: 10px 20px;
+    background-color: #800E13;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .tarjeta-producto button:hover {
+    background-color: #660000;
+  }
